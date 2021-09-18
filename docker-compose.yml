@@ -2,8 +2,7 @@ version: '3.8'
 
 services:
   php:
-    build:
-      context: ./php
+    image: ghcr.io/vektorprogrammet/vektor-php:v1
     user: "1000:1000" #Fix permission errors
     volumes:
       - ./app:/var/www/app
@@ -18,7 +17,6 @@ services:
       MYSQL_USER: vektor
       MYSQL_PASSWORD: vektor
   nginx:
-    container_name: nginx
     image: nginx:stable-alpine
     ports:
       - '80:80'
