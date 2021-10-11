@@ -14,3 +14,6 @@
 
 5. (DEV) Create database
 `docker-compose exec php npm run db:reload`
+
+6. Fix permissions
+`docker-compose exec php chmod -R 755 /var/www`
