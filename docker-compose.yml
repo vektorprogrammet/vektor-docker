@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   php:
-    image: ghcr.io/vektorprogrammet/vektor-php:v1
+    image: ghcr.io/vektorprogrammet/vektor-php:v1.1
     volumes:
       - ./app:/var/www/app
   db:
