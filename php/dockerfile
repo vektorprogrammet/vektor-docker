@@ -13,7 +13,3 @@ WORKDIR /var/www/app
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
     && composer self-update --1 \
     && apt install -y nodejs npm
-
-RUN usermod -u 1000 www-data
-
-RUN chown -R 1000:www-data /var/www/

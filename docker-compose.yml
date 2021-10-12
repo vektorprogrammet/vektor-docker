@@ -3,7 +3,6 @@ version: '3.8'
 services:
   php:
     image: ghcr.io/vektorprogrammet/vektor-php:v1
-    user: "1000:1000" #Fix permission errors
     volumes:
       - ./app:/var/www/app
   db:
